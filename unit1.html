@@ -16,14 +16,24 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 0 10px;
+        padding: 0 20px;
       }
 
       .title {
         text-decoration: none;
         color: white;
-        font-size: 40px;
+        font-size: 32px;
+      }
+
+      .logo {
+        height: 85px;
+        padding-top: 12px;
+        margin-right: -15px;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
       }
 
       .unit-links {
@@ -31,12 +41,13 @@
         gap: 10px;
       }
 
-      a {
+      .unit-links a.unit {
         text-decoration: none;
         color: white;
         font-size: 24px;
-        padding: 0 10px;
         line-height: 60px;
+        padding: 0 10px;
+        display: inline-block; /* or flex */
       }
 
       .unit:hover {
@@ -76,7 +87,12 @@
 
   <body>
     <nav>
-      <a class="title" href="index.html"><b>APESA</b></a>
+      <div class="nav-left">
+        <a href="index.html">
+          <img class="logo" src="images/logo.png" alt="APESA"/>
+        </a>
+        <a class="title" href="index.html"><b>APESA</b></a>
+      </div>
       <div class="unit-links">
         <a class="unit" href="important.html">Importance</a>
         <a class="unit" href="unit1.html">Unit 1</a>
