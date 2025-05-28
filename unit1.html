@@ -60,9 +60,10 @@
       }
 
       h1 {
-        text-align: center;
+        text-align: left;
         font-size: 36px;
         color: #ffdb4d;
+        margin-left: 30px;
       }
       h3 {
         margin-left: 30px;
@@ -73,7 +74,7 @@
         margin-left: 30px;
         color: white;
         font-size: 20px;
-        width: 40%;
+        width: 20%;
         /* line-height: 2; */
       }
       h4 {
@@ -82,6 +83,40 @@
         font-size: 27px;
         color: #ffdb4d;
       }
+      
+      .history-wrapper2 {
+        display: flex;
+        margin: 0 30px 40px 30px;
+        align-items: stretch;
+        gap: 0px;
+      }
+
+      .history-wrapper2 h2 {
+        margin-left: 0;
+      }
+
+
+      .history-wrapper2 > div {
+        flex: 1;
+      }
+
+      .history-wrapper2 p {
+        width: 85%;  /* or reduce it to 60% */
+        margin: 0;
+      }
+
+
+      .history-image {
+        width: 30%;
+        border-radius: 8px;
+        margin-right: 50px;
+        margin-left: 0px
+      }
+      .history-wrapper2 h1,
+      .history-wrapper2 h3 {
+        margin-left: 0;
+      }
+
     </style>
   </head>
 
@@ -104,17 +139,31 @@
         <a class="unit" href="unit7.html">Unit 7</a>
       </div>
     </nav>
-    <h1><u>Geography and History of Postcolonial Southern Africa</u></h1>
-    <h3>Unit Overview</h3>
-    <p>This unit will introduce students to the Southern African region, allowing them to grasp fundamental concepts of the region’s geography. Students will explore the unique history, climate, and culture of the Southern African region. The unit examines the region’s diverse terrain and climate, featuring a case study on the expansive Kalahari Desert. Additionally, students will analyze the lasting impact of apartheid on Southern Africa’s society.</p>
-    <h4>1.1: Terrain and Climate</h4>
-    <p>This section provides a brief overview of weather patterns within the region, as well as the vast arid land. This will include a comprehensive case study of the Kalahari Desert.
-</p>
-    <h4>1.2: Historical Impacts on Modern Day Southern Africa</h4>
-    <p>This section explores the history of the Southern Africa region, as well as how nations have adapted following the end of colonialism. 
-    This will include a comprehensive case study of the Apartheid.</p>
-    <h4>1.3: Land Use Patterns</h4>
-    <p>This section will explore the spatial distribution of the main land use patterns in Southern Africa, as well as the primary purposes of each one.
-</p>
+    <h1 style="Text-Align: Center;"><u>The Geography and History of Postcolonial Southern Africa</u></h1>
+    <div class="content">
+      <div class="history-wrapper2">
+        <div>
+          <h1>Unit Overview</h2>
+          <p>
+            This unit will introduce students to the Southern African region, allowing them to grasp fundamental concepts of the region’s geography. Students will explore the unique history, climate, and culture of the Southern African region. The unit examines the region’s diverse terrain and climate, featuring a case study on the expansive Kalahari Desert. Additionally, students will analyze the lasting impact of apartheid on Southern Africa’s society.
+          </p>
+          <h3>1.1: Terrain and Climate</h2>
+          <p>This section provides a brief overview of weather patterns within the region, as well as the vast arid land. This will include a comprehensive case study of the Kalahari Desert.</p>
+        </div>
+        <img class="history-image" src="images/terrain.jpg" alt="Terrain of Southern Africa" />
+      </div>
+
+      <div class="history-wrapper2">
+        <img src="images/history.jpg" class="history-image" alt="History of Southern Africa"/>
+        <div>
+          <h1>1.2: Historical Impacts on Modern Day Southern Africa</h2>
+          <p>
+            This section explores the history of the Southern Africa region, as well as how nations have adapted following the end of colonialism. This will include a comprehensive case study of the Apartheid.
+          </p>
+          <h1>1.3: Land Use Patterns</h1>
+          <p>This section will explore the spatial distribution of the main land use patterns in Southern Africa, as well as the primary purposes of each one.</p>
+        </div>
+      </div>
+    </div>         
   </body>
 </html>
