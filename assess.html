@@ -74,10 +74,59 @@
 
       p {
         margin-left: 20px;
-        color: white; 
-        width: 40%; 
+        width: 80%;
+        color: white;
         font-size: 20px;
       }
+
+      .container {
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+        margin: 0 20px;
+      }
+
+      .text-list {
+        flex: 1;
+      }
+
+      .history-wrapper2 {
+        display: flex;
+        margin: 0 30px 40px 30px;
+        align-items: stretch;
+        gap: 50px;
+      }
+
+      .history-wrapper2 h2 {
+        margin-left: 0;
+      }
+
+      .history-wrapper2 > div {
+        flex: 1;
+      }
+
+      .history-wrapper2 p {
+        width: 90%;
+        margin: 0;
+      }
+      .frq-image {
+        width: 35%;
+        height: auto;
+        border-radius: 8px;
+        margin-right: 50px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h2 {
+        margin-left: 30px;
+        font-size: 35px;
+        color: #ffdb4d;
+      }
+
     </style>
   </head>
 
@@ -102,7 +151,16 @@
       </div>
     </nav>
     <h1>Assessment Structure</h1>
-    <p>This assessment plan uses a combination of MCQs (Multiple Choice Questions), including stimulus-based questions, and FRQs(Free Response Questions) to evaluate student knowledge and critical thinking about Southern Africa’s geography, history, politics, and society. </p>
-    <p>The assessment aligns with curriculum goals of understanding physical geography, colonial and post-colonial history(especially apartheid), economic development, cultural dynamics, and the importance of the Southern Africa region. The assessment includes questions that test knowledge of Southern Africa’s geography, demographics, history, and political ideologies, such as terrain features, population trends, apartheid, and economic sectors. These questions focus on understanding of the content. The free-response question asks students to analyze apartheid signage by identifying the country, describing social and political impacts, resistance efforts, and lasting effects. This helps to ensure students demonstrate both content knowledge and critical thinking skills.</p>
+    <div class="content">
+      <div class="history-wrapper2">
+        <div>
+          <h2>Style</h2>
+          <p>
+            The history of Southern Africa—encompassing countries like South Africa, Mozambique, Madagascar, Lesotho, Eswatini, Zambia, Zimbabwe, Botswana, and Namibia—is critically important because it reveals the complex interplay of indigenous civilizations, colonialism, resistance, and resilience that has shaped the region’s modern identity. This area is home to some of the earliest human ancestors and ancient kingdoms such as Great Zimbabwe, showcasing rich cultural and technological achievements long before European contact. The colonial era brought profound disruption, exploitation, and resistance, culminating in struggles for independence and the fight against systems like apartheid in South Africa. Understanding this history is essential not only for appreciating the cultural and political diversity of the region, but also for grasping ongoing social, economic, and environmental challenges that are deeply rooted in its past. It helps illuminate global themes of injustice, resilience, and transformation, offering valuable lessons for both regional and international development.
+          </p>
+        </div>
+        <img class="frq" src="images/frq.png" alt="Free-Response of Southern Africa" />
+      </div>
+    </div> 
   </body>
 </html>
